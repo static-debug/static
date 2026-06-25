@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>报名成功 - 山东省输血协会2026年输血研讨会</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 14px;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei",
+          sans-serif;
+        background-color: #f5f7fa;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      .header {
+        background: linear-gradient(
+          135deg,
+          #1e88e5 0%,
+          #1565c0 50%,
+          #0d47a1 100%
+        );
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        color: #fff;
+      }
+      .back-btn {
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0.3rem 0.5rem;
+        margin-right: 0.5rem;
+      }
+      .header-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        flex: 1;
+        text-align: center;
+        margin-right: 2rem;
+      }
+      .success-container {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.5rem;
+      }
+      .success-icon {
+        width: 5rem;
+        height: 5rem;
+        background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5rem;
+        color: #fff;
+        margin-bottom: 1.5rem;
+        animation: scaleIn 0.5s ease-out;
+      }
+      @keyframes scaleIn {
+        0% {
+          transform: scale(0);
+          opacity: 0;
+        }
+        50% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .success-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 0.8rem;
+      }
+      .success-desc {
+        font-size: 0.95rem;
+        color: #666;
+        text-align: center;
+        line-height: 1.8;
+        margin-bottom: 2rem;
+      }
+      .info-card {
+        width: 100%;
+        background: #fff;
+        border-radius: 0.7rem;
+        padding: 1.2rem;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        margin-bottom: 2rem;
+      }
+      .info-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1565c0;
+        margin-bottom: 1rem;
+        padding-bottom: 0.6rem;
+        border-bottom: 1px solid #e3f2fd;
+        display: flex;
+        align-items: center;
+      }
+      .info-title::before {
+        content: "";
+        width: 3px;
+        height: 1rem;
+        background: #1e88e5;
+        border-radius: 2px;
+        margin-right: 0.5rem;
+      }
+      .info-row {
+        display: flex;
+        padding: 0.6rem 0;
+        font-size: 0.9rem;
+      }
+      .info-label {
+        width: 5rem;
+        color: #999;
+        flex-shrink: 0;
+      }
+      .info-value {
+        color: #333;
+        flex: 1;
+        font-weight: 500;
+      }
+      .btn-group {
+        width: 100%;
+        display: flex;
+        gap: 0.8rem;
+      }
+      .btn {
+        flex: 1;
+        padding: 0.9rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        border: none;
+      }
+      .btn-primary {
+        background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+        color: #fff;
+      }
+      .btn-primary:active {
+        opacity: 0.9;
+      }
+      .btn-outline {
+        background: #fff;
+        color: #1565c0;
+        border: 1px solid #1e88e5;
+      }
+      .btn-outline:active {
+        background: #e3f2fd;
+      }
+      .tip-text {
+        font-size: 0.85rem;
+        color: #f57c00;
+        text-align: center;
+        margin-top: 1.5rem;
+        line-height: 1.7;
+        padding: 0 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <span class="back-btn" onclick="history.back()">‹</span>
+      <span class="header-title">报名成功</span>
+    </div>
+
+    <div class="success-container">
+      <div class="success-icon">✓</div>
+      <div class="success-title">报名成功</div>
+      <div class="success-desc">您的参会回执已提交成功</div>
+
+      <div class="info-card">
+        <div class="info-title">会议信息</div>
+        <div class="info-row">
+          <span class="info-label">会议名称</span>
+          <span class="info-value"
+            >山东省输血协会临床输血技术专业委员会<br />2026年输血研讨会</span
+          >
+        </div>
+        <div class="info-row">
+          <span class="info-label">会议时间</span>
+          <span class="info-value">2026年8月6日-8日</span>
+        </div>
+        <div class="info-row">
+          <span class="info-label">会议地点</span>
+          <span class="info-value"
+            >泰安东尊华美达广场酒店<br />（泰安市泰山区迎胜东路16号）</span
+          >
+        </div>
+        <div class="info-row">
+          <span class="info-label">报到时间</span>
+          <span class="info-value">8月6日 14:00-20:00</span>
+        </div>
+      </div>
+
+      <div class="btn-group" style="margin-top: 2rem">
+        <a href="index.html" class="btn btn-outline">返回首页</a>
+        <a href="contact.html" class="btn btn-primary">联系我们</a>
+      </div>
+    </div>
+  </body>
+</html>

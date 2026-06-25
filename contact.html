@@ -1,0 +1,488 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>联系我们 - 山东省输血协会2026年输血研讨会</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 14px;
+      }
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei",
+          sans-serif;
+        background-color: #f5f7fa;
+        min-height: 100vh;
+        padding-bottom: 2rem;
+      }
+      .header {
+        background: linear-gradient(
+          135deg,
+          #1e88e5 0%,
+          #1565c0 50%,
+          #0d47a1 100%
+        );
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        color: #fff;
+      }
+      .back-btn {
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0.3rem 0.5rem;
+        margin-right: 0.5rem;
+      }
+      .header-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        flex: 1;
+        text-align: center;
+        margin-right: 2rem;
+      }
+      .banner {
+        background: linear-gradient(
+          135deg,
+          #1e88e5 0%,
+          #1565c0 50%,
+          #0d47a1 100%
+        );
+        padding: 2rem 1.2rem;
+        text-align: center;
+        color: #fff;
+        position: relative;
+      }
+      .banner::before {
+        content: "📞";
+        font-size: 2.5rem;
+        display: block;
+        margin-bottom: 0.8rem;
+      }
+      .banner-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+      .banner-subtitle {
+        font-size: 0.85rem;
+        opacity: 0.9;
+        line-height: 1.6;
+      }
+      .contact-section {
+        margin: 0.8rem;
+        background: #fff;
+        border-radius: 0.7rem;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      .section-title {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #1565c0;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid #f0f0f0;
+        background: #e3f2fd;
+        display: flex;
+        align-items: center;
+      }
+      .section-title::before {
+        content: "";
+        width: 3px;
+        height: 1rem;
+        background: #1e88e5;
+        border-radius: 2px;
+        margin-right: 0.5rem;
+      }
+      .contact-item {
+        display: flex;
+        align-items: center;
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid #f5f5f5;
+      }
+      .contact-item:last-child {
+        border-bottom: none;
+      }
+      .contact-icon {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        flex-shrink: 0;
+        font-size: 1.2rem;
+      }
+      .icon-phone {
+        background: #e3f2fd;
+        color: #1976d2;
+      }
+      .icon-address {
+        background: #fff3e0;
+        color: #f57c00;
+      }
+      .icon-bank {
+        background: #e3f2fd;
+        color: #1976d2;
+      }
+      .icon-hotel {
+        background: #e3f2fd;
+        color: #1976d2;
+      }
+      .contact-info {
+        flex: 1;
+      }
+      .contact-label {
+        font-size: 0.85rem;
+        color: #999;
+        margin-bottom: 0.2rem;
+      }
+      .contact-value {
+        font-size: 0.95rem;
+        color: #333;
+        font-weight: 500;
+        line-height: 1.6;
+      }
+      .person-section {
+        margin: 0.8rem;
+        background: #fff;
+        border-radius: 0.7rem;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      .person-card {
+        padding: 1rem 1.2rem;
+        border-bottom: 1px solid #f5f5f5;
+        display: flex;
+        align-items: center;
+      }
+      .person-card:last-child {
+        border-bottom: none;
+      }
+      .person-avatar {
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-right: 1rem;
+        flex-shrink: 0;
+      }
+      .person-info {
+        flex: 1;
+      }
+      .person-name {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 0.2rem;
+      }
+      .person-role {
+        font-size: 0.8rem;
+        color: #999;
+        margin-bottom: 0.3rem;
+      }
+      .person-phone {
+        font-size: 0.95rem;
+        color: #1976d2;
+        font-weight: 500;
+      }
+      .call-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+        color: #fff;
+        border-radius: 50%;
+        text-decoration: none;
+        font-size: 1.1rem;
+        flex-shrink: 0;
+      }
+      .call-btn:active {
+        opacity: 0.9;
+      }
+      .tip-box {
+        margin: 0.8rem;
+        background: #fff3e0;
+        border-radius: 0.7rem;
+        padding: 1rem;
+        border-left: 3px solid #ff9800;
+      }
+      .tip-title {
+        font-size: 0.9rem;
+        font-weight: 600;
+        color: #e65100;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+      }
+      .tip-text {
+        font-size: 0.85rem;
+        color: #bf360c;
+        line-height: 1.7;
+      }
+      .btn-group {
+        display: flex;
+        gap: 0.8rem;
+        margin: 1rem 0.8rem;
+      }
+      .action-btn {
+        flex: 1;
+        padding: 0.9rem;
+        background: linear-gradient(135deg, #1e88e5 0%, #1565c0 100%);
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+      }
+      .action-btn:active {
+        opacity: 0.9;
+      }
+      .action-btn-outline {
+        background: #fff;
+        color: #1565c0;
+        border: 1px solid #1565c0;
+      }
+      .work-time {
+        text-align: center;
+        padding: 1rem;
+        color: #999;
+        font-size: 0.8rem;
+      }
+      .notice-section {
+        margin: 0.8rem;
+        background: #fff;
+        border-radius: 0.7rem;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      }
+      .notice-content {
+        padding: 1.2rem;
+        font-size: 0.9rem;
+        color: #333;
+        line-height: 2;
+      }
+      .notice-doc-title {
+        font-size: 1.05rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #222;
+        line-height: 1.6;
+      }
+      .notice-greeting {
+        margin-bottom: 0.8rem;
+        text-indent: 0;
+      }
+      .notice-paragraph {
+        text-indent: 2em;
+        margin-bottom: 0.5rem;
+      }
+      .notice-section-title {
+        font-weight: 600;
+        margin-top: 0.8rem;
+        margin-bottom: 0.3rem;
+        text-indent: 0;
+      }
+      .notice-sub-item {
+        padding-left: 2em;
+        margin-bottom: 0.2rem;
+      }
+      .notice-signature {
+        text-align: right;
+        margin-top: 1.5rem;
+        line-height: 1.8;
+      }
+      .notice-highlight {
+        color: #c41e3a;
+        font-weight: 600;
+      }
+      .notice-fee-box {
+        background: #f5f5f5;
+        border-radius: 0.4rem;
+        padding: 0.8rem;
+        margin: 0.5rem 0;
+        border-left: 3px solid #1e88e5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <span class="back-btn" onclick="history.back()">‹</span>
+      <span class="header-title">联系我们</span>
+    </div>
+
+    <div class="banner">
+      <div class="banner-title">山东省输血协会</div>
+      <div class="banner-subtitle">临床输血技术专业委员会2026年输血研讨会</div>
+    </div>
+
+    <div class="notice-section">
+      <div class="section-title">会议通知</div>
+      <div class="notice-content">
+        <div class="notice-doc-title">
+          关于召开山东省输血协会临床输血技术专业委员会2026年输血研讨会的通知
+        </div>
+
+        <div class="notice-greeting">各会员单位、相关医疗机构：</div>
+
+        <div class="notice-paragraph">
+          为进一步加强临床输血精准管理，提升临床输血技术水平，协会定于2026年8月6-8日在泰安市召开山东省输血协会临床输血技术专业委员会2026年输血研讨会，现将有关事项通知如下：
+        </div>
+
+        <div class="notice-section-title">一、会议内容</div>
+        <div class="notice-sub-item">（一）知名专家专题讲座；</div>
+        <div class="notice-sub-item">（二）与会代表学术交流。</div>
+
+        <div class="notice-section-title">二、参加人员</div>
+        <div class="notice-paragraph">
+          山东省输血协会临床输血技术专业委员会全体委员及从事输血相关工作的医护人员。
+        </div>
+
+        <div class="notice-section-title">三、时间地点</div>
+        <div class="notice-paragraph">
+          会议时间：<span class="notice-highlight">2026年8月6日-8日</span
+          >（6日14:00-20:00报到，7日全天会议，8日上午离会）。
+        </div>
+        <div class="notice-paragraph">
+          会议地点：泰安东尊华美达广场酒店（泰安市泰山区迎胜东路16号）。
+        </div>
+
+        <div class="notice-section-title">四、其他事项</div>
+        <div class="notice-sub-item">
+          （一）<span class="notice-highlight">会务费700元/人</span
+          >，会议统一安排食宿，住宿费、交通费自理。住宿标准：350元/标间/天，175元/床/天，350元/大床房/天。
+        </div>
+
+        <div class="notice-sub-item">（二）汇款方式</div>
+        <div class="notice-paragraph">
+          参会人员于<span class="notice-highlight">7月31日前</span
+          >将会务费汇入以下账号（汇款时请备注"输血研讨会+单位名称"）：
+        </div>
+        <div class="notice-fee-box">
+          <div>开户名：山东省输血协会</div>
+          <div>账&nbsp;&nbsp;&nbsp;号：632082574610001</div>
+          <div>开户行：招商银行济南分行营业部</div>
+        </div>
+
+        <div class="notice-sub-item">（三）报名参会</div>
+        <div class="notice-paragraph">
+          请接到通知后，提前安排好工作按时参会，并于<span
+            class="notice-highlight"
+            >7月27日前</span
+          >扫描上方二维码报名参会并填写住宿信息。<span class="notice-highlight"
+            >委员务必参会，无故不参会取消委员资格</span
+          >。特殊原因不能参会者，请出示单位盖章版请假条。累计2次不参会者，取消委员资格。
+        </div>
+
+        <div class="notice-sub-item">（四）会议联系人</div>
+        <div class="notice-sub-item" style="text-align: right">
+          会务联系人：杨&nbsp;&nbsp;泽&nbsp;&nbsp;13854870695
+        </div>
+        <div class="notice-sub-item" style="text-align: right">
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;董德诚&nbsp;&nbsp;15215380757
+        </div>
+        <div class="notice-sub-item" style="text-align: right">
+          协会联系人：宋玲燕&nbsp;&nbsp;19531115525
+        </div>
+
+        <div class="notice-signature" style="text-align: right">
+          <div style="text-align: right">山东省输血协会</div>
+          <div style="text-align: right">2026年6月23日</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-section">
+      <div class="section-title">会议信息</div>
+      <div class="contact-item">
+        <div class="contact-icon icon-hotel">📍</div>
+        <div class="contact-info">
+          <div class="contact-label">会议地点</div>
+          <div class="contact-value">
+            泰安东尊华美达广场酒店<br />（泰安市泰山区迎胜东路16号）
+          </div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon icon-bank">🏦</div>
+        <div class="contact-info">
+          <div class="contact-label">缴费账户</div>
+          <div class="contact-value">
+            开户名：山东省输血协会<br />
+            账&nbsp;&nbsp;号：632082574610001<br />
+            开户行：招商银行济南分行营业部
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="person-section">
+      <div class="section-title">会务联系人</div>
+      <div class="person-card">
+        <div class="person-avatar">杨</div>
+        <div class="person-info">
+          <div class="person-name">杨泽</div>
+          <div class="person-phone">138-5487-0695</div>
+        </div>
+        <a href="tel:13854870695" class="call-btn">📞</a>
+      </div>
+      <div class="person-card">
+        <div class="person-avatar">董</div>
+        <div class="person-info">
+          <div class="person-name">董德诚</div>
+          <div class="person-phone">152-1538-0757</div>
+        </div>
+        <a href="tel:15215380757" class="call-btn">📞</a>
+      </div>
+    </div>
+
+    <div class="person-section">
+      <div class="section-title">协会联系人</div>
+      <div class="person-card">
+        <div class="person-avatar">宋</div>
+        <div class="person-info">
+          <div class="person-name">宋玲燕</div>
+          <div class="person-phone">195-3111-5525</div>
+        </div>
+        <a href="tel:19531115525" class="call-btn">📞</a>
+      </div>
+    </div>
+
+    <div class="tip-box">
+      <div class="tip-title">⚠️ 重要提示</div>
+      <div class="tip-text">
+        1. 报名截止日期：2026年7月27日；<br />
+        2. 会务费700元/人，请于7月31日前完成汇款；<br />
+        3. 委员必须参会，特殊原因不能参会需出示单位盖章请假条；<br />
+        4. 汇款时请备注："输血研讨会+单位名称+姓名"。
+      </div>
+    </div>
+
+    <div class="btn-group">
+      <a href="register.html" class="action-btn">立即报名</a>
+    </div>
+
+    <div class="work-time">山东省输血协会 © 2026</div>
+  </body>
+</html>
